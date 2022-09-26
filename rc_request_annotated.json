@@ -1,0 +1,22 @@
+{
+  "debugOPT": 1, # debugOPT=1 will print detailed log 
+  "plotOPT": 0, # plotOPT=1 will make a waveform plot for waveforms (obspy stream) retrieved after the loop of all EQs selected 
+  "testOPT": 0, # testOPT=1 will stop at the first loop
+  "no_waveOPT": 0, # no_waveOPT=1 will not request waveforms 
+  "betaOPT": 0, # betaOPT=1 will only request selected EQs (manually defined in the python code)
+  "catalog_fi": "./Dataset_S1.csv", # event catalog
+  "request_servers": [3, 1, 2], # list of data centers (servers). 1 is IRIS, 2 is NCEDC, 3 is SCEDC. 
+  "distdeg_from_eq": 1.0, # the maximum distance from each EQ for station selection
+  "minmag": 4.0, # the minimum magnitude for EQ search
+  "maxmag": 9.9, # the maximum magnitude for EQ search
+  "start_time": "2019-07-04T00:00:00", # start time for EQ search
+  "end_time": "2019-07-18T00:00:00", # end time for EQ search
+  "net_listOUT": "*", # list of networks. e.g., "BK,CI". Please note that 3J (nodal sensors) is currently excluded. if needed, manually update the python code
+  "sta_list": "*", # list of stations
+  "com_listOUT": "HH?,HN?,DP?,EP?,EH?,CN?,CL?", # list of components
+  "start_i": 0, # the start index of EQ catalog
+  "step_i": 1, # step for EQ catalog list. 1 is all of them.
+  "max_retry": 10, # maximum retry to request waveforms for each data center
+  "sleep_time_sec": 60, # waiting time for next waveform request if a connection to data center is failed
+  "failtestOPT": 0 # failtestOPT=1 will make all connections to be failed
+}
