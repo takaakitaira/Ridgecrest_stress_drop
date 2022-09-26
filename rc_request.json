@@ -1,0 +1,22 @@
+{
+  "debugOPT": 1,
+  "plotOPT": 0,
+  "testOPT": 0,
+  "no_waveOPT": 0,
+  "betaOPT": 0,
+  "catalog_fi": "./Dataset_S1.csv",
+  "request_servers": [3, 1, 2],
+  "distdeg_from_eq": 1.0,
+  "minmag": 4.0,
+  "maxmag": 9.9,
+  "start_time": "2019-07-04T00:00:00",
+  "end_time": "2019-07-18T00:00:00",
+  "net_listOUT": "*",
+  "sta_list": "*",
+  "com_listOUT": "HH?,HN?,DP?,EP?,EH?,CN?,CL?",
+  "start_i": 1,
+  "step_i": 1,
+  "max_retry": 10,
+  "sleep_time_sec": 60,
+  "failtestOPT": 0
+}
